@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <title>Specificity in CSS</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div> 
+            <h1>Specificity in CSS</h1>
+        </div>
+
+        <div>
+            <table border="1" align="center" class="table">
+                <tr align="center">
+                    <thead>
+                        <th>Element</th>
+                        <th>Priority</th>
+                        <th>Syntax</th>
+                    </thead>
+                </tr>
+
+                <tr align="center">
+                    <td>!important</td>
+                    <td>1</td>
+                    <td>font-color: red !important</td>
+                </tr>
+
+                <tr align="center">
+                    <td>id</td>
+                    <td>2</td>
+                    <td>tag id="**"</td>
+                </tr>
+
+                <tr align="center">
+                    <td>class</td>
+                    <td>3</td>
+                    <td>tag class="**"</td>
+                </tr>
+
+                <tr align="center">
+                    <td>tag</td>
+                    <td>4</td>
+                    <td>any HTML tag</td>
+                </tr>
+            </table><hr>
+        </div>
+
+        <div>
+            <img src="me.jpg" height="100" class="center"><br>
+            <p>Harshith Reddy</p> 
+        </div>
+    </body>
+</html>
